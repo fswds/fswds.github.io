@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>js实现打字特效</title>
+    <title>Welcome to my page</title>
     <!-- 移动设备 -->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <style type="text/css">
@@ -36,22 +36,22 @@
 </div>
 <script type="text/javascript">
 
-// html文字类似于打字特效
+
 function typewriting(){
-    // 定义数字长度为零
+    
     var index=0;
-    // 获取文字内容，我这里直接在页面上写出来然后隐藏的，也可以动态加载哦
+    
     var word=document.getElementById("title").innerHTML;
-    // 封装任务
+    
     function type(){
-        // 获取打字在哪个位置，substring()方法提取字符串（获取到的word里）中介于两个指定下标之间的字符（起始为0，运行一次自增一次）。
+        
         document.getElementById("text").innerText = word.substring(0,index++);
     }
-    setInterval(type, 100);
-    // 100毫秒调用一次type任务
+    setInterval(type, 300);
+    
 }
 typewriting();
-// 执行typewriting
+
 </script>
 </body>
 </html>
